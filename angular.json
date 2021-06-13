@@ -51,8 +51,10 @@
               "apps/address-database/src/favicon.ico",
               "apps/address-database/src/assets"
             ],
-            "styles": ["apps/address-database/src/styles.scss"],
-            "scripts": []
+            "styles": ["apps/address-database/src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"],
+            "scripts": ["./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/@popperjs/core/dist/umd/popper.min.js"]
           },
           "configurations": {
             "production": {
