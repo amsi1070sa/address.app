@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@ngneat/reactive-forms';
-import { Observable, ReplaySubject } from 'rxjs';
-import { Name } from './components/interfaces/name';
 import { formData } from './form-edit-data';
 import { FormEditData } from './form-edit-data.model';
 

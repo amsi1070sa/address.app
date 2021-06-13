@@ -7,8 +7,13 @@
   <h1>Welcome to {{ title }}!</h1>
 </header>
 <main>
-  <div class="flex">
-   <address-database-name></address-database-name>
-  </div>
+  <form [formGroup]="taskData">
+    <div class="flex">
+      <address-database-name
+        formControlName="name"
+      ></address-database-name>
+      <p>{{taskData.value| json}}</p>
+    </div>
+  </form>
 
 </main>

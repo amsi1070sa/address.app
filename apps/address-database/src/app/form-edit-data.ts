@@ -6,8 +6,8 @@ export function formData(): FormGroup<FormEditData> {
   return new FormGroup<FormEditData>(
     {
       name: new FormControl<Name>({
-       vorname: undefined,
-  	   nachname: undefined,
+       vorname: '',
+  	   nachname: '',
       }),
     });
 };
