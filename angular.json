@@ -51,10 +51,14 @@
               "apps/address-database/src/favicon.ico",
               "apps/address-database/src/assets"
             ],
-            "styles": ["apps/address-database/src/styles.scss",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css"],
-            "scripts": ["./node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "./node_modules/@popperjs/core/dist/umd/popper.min.js"]
+            "styles": [
+              "apps/address-database/src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/@popperjs/core/dist/umd/popper.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -118,11 +122,17 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/address-database"],
+          "outputs": [
+            "coverage/apps/address-database"
+          ],
           "options": {
             "jestConfig": "apps/address-database/jest.config.js",
             "passWithNoTests": true
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     },
@@ -147,7 +157,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/address-database-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/address-database-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }

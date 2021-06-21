@@ -1,11 +1,12 @@
-<div [formGroup]="nameForm" class="name">
-  <fieldset class="border p-2">
-    <legend class="w-auto">Name
-      <label for="firstName">Vorname:  </label>
-      <input type="text" id="firstName" formControlName="vorname">
+<fieldset class="nameFieldSet border">
+  <legend class="nameLegend">Name</legend>
+  <div [formGroup]="nameForm" class="name">
+      <label for="firstName">
+      <input type="text" placeholder="vorname" formControlName="vorname">
+      </label>
 
-      <label for="sureName">Nachname:  </label>
-      <input type="text" id="sureName" formControlName="nachname">
-    </legend>
-  </fieldset>
-</div>
+        <label for="sureName">
+          <input type="text" placeholder="nachname" formControlName="nachname">
+        </label>
+  </div>
+</fieldset>

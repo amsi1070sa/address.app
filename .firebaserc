@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angularsecurity-bd295": {
+      "hosting": {
+        "address-database": [
+          "angularsecurity-bd295"
+        ]
+      }
+    }
+  }
+}
